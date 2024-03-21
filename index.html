@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Image/Logo.png" alt="LogoAlura" />
+    </header>
+
+    <main class="encriptador">
+        <textarea name="valorUsuario" id="valorUsuario" cols="30" placeholder="Ingresa el texto aqui" rows="10"></textarea>
+        <div class="mensaje-temporal" id="temporal">
+            <img class="muñeco" src="Image/Muñeco.png" alt="muñeco"  />
+            <h2>Ningun Mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desea encriptar o desencriptar</p>
+        </div>
+        <div class="advertencia">
+            <img src="Image/bi_exclamation-circle-fill.png" alt="exclamation-circle" />
+            <p class="indicaciones">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="btn-principales">
+            <button onclick="encriptar();" class="btn-encriptar">Encriptar</button>
+            <button onclick="desencriptar();" class="btn-desencriptar">Desencriptar</button>
+        </div>
+        
+        <button onclick="copiarTexto();" class="btn-copiar" id="btn-copiar" hidden>Copiar</button>
+    </main>
+    
+
+    <div id="resultados" class="resultados" hidden>
+        <textarea name="tr" id="resultadoFinal" cols="30" rows="10"></textarea>
+    </div>
+    <script src="app.js" ></script>
+</body>
+
+</html>

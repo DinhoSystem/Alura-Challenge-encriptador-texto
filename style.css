@@ -1,0 +1,177 @@
+body{
+    font-family: 'Inter',sans-serif;
+}
+
+header img{
+    padding: 20px;
+}
+
+.encriptador{
+    width: 100%;
+}
+
+#valorUsuario{
+    position: absolute;
+    top: 120px;
+    left: 240px;
+    border: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 32px;
+}
+#valorUsuario::placeholder{
+    color: #0A3871;
+}
+.mensaje-temporal{
+    position: absolute;
+    top: 200px;
+    left: 1050px;
+}
+
+.advertencia{
+    position: absolute;
+    top: 670px;
+    left: 250px;
+    display:inline-block;
+}
+
+.advertencia img{
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 3px 4px;
+}
+
+.indicaciones{
+    font-size: 12px;
+    display:inline-block;
+    margin: 0px 0px;
+}
+
+.btn-principales{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 700px;
+    left: 250px;
+    margin: 0px 30px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 1em 7em;
+    border: #0A3871 solid 1px;
+    border-radius: 15px;
+}
+
+.btn-desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    margin: 1px;
+    font-size: 16px;
+    padding: 1em 7em;
+    border: solid 1px;
+    border-radius: 15px;
+}
+
+.btn-copiar{
+    background-color: #ffffff;
+    color: #0A3871;
+    margin: 1px;
+    font-size: 16px;
+    padding: 1em 7em;
+    border: solid 1px;
+    border-radius: 15px;
+    position: absolute;
+    top: 700px;
+    left: 69em;
+}
+.resultados{
+    width: 400px;
+    height: 620px;
+    position: absolute;
+    top: 40px;
+    left: 1030px;
+}
+
+#resultadoFinal{
+    font-family: 'Inter',sans-serif;
+    position: absolute;
+    top: 72px;
+    left: 20px;
+    width: 320px;
+    height: 550px;
+    font-size: 24px;
+    border: none;
+}
+
+@media screen and (max-width: 768px){
+    #valorUsuario{
+        width: 300px;
+        top: 140px;
+        left: 40px;
+        font-size: 24px;
+    }
+    .muñeco{
+        display: none;
+    }
+    .mensaje-temporal{
+        position: absolute;
+        top:38em;
+        left: 70px;
+        border-radius: 15px;
+        padding: 1em;
+        box-shadow: 0px 0px 10px #cbcbcb;
+    }
+    .advertencia{
+        top: 500px;
+        left: 40px;
+    }
+    .btn-principales{
+        top: 550px;
+        left: 40px;
+    }
+    .btn-encriptar{
+        padding: 0.5em 4em;
+        top: 550px;
+        left: 80px;
+    }
+    .btn-desencriptar{
+        padding: 0.5em 4em;
+        top: 550px;
+        left: 280px;
+    }
+    .resultados{
+        width: 400px;
+        height: 180px;
+        top: 602px;
+        left: 90px;
+        background: #0A3871;
+    }
+    #resultadoFinal{
+        top: 20px;
+        left: 20px;
+        width: 320px;
+        height: 20px;
+        font-size: 15px;
+    }
+    .btn-copiar{
+        padding: 0.5em 4em;
+        top: 52em;
+        left: 200px;
+        
+    }
+}
+@media screen and (max-width: 768px){
+    .btn-encriptar{
+        padding: 0.5em 8em;
+    }
+    .btn-desencriptar{
+        padding: 0.5em 7.1em;
+    }
+    .btn-principales{
+        left: auto;
+    }
+}
+
